@@ -4,13 +4,13 @@
 
 int __init init_hello(void)
 {
-	printk(KERN_ALERT "[Module Message] hello, Module. \n");
+	printk(KERN_ALERT "[Module Message] change  hello \n");
 	return 0;
 }
 
 void __exit exit_hello(void)
 {
-	printk(KERN_ALERT "[Module Message] Do you really want to break up with me? \n");
+	printk(KERN_ALERT "[Module Message] [change] Do you really want to break up with me? \n");
 }
 module_init(init_hello);
 module_exit(exit_hello);
